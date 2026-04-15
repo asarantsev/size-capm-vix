@@ -12,10 +12,9 @@ def plots(series):
     plot_acf(abs(series))
     plt.show()
 
-data = pandas.read_excel('data.xlsx', sheet_name = 'data')
-vix = data.values[:, 1]
-returns = data.values[:, 2]
-rates = data.values[:, 3]
+returns = pandas.read_excel('data-new.xlsx', sheet_name = 'Total-Returns').values[:, 10]
+vix = pandas.read_excel('data-new.xlsx', sheet_name = 'Volatility').values[:, 1]
+rates = pandas.read_excel('data-new.xlsx', sheet_name = 'Short-Treasury').values[1:, 1]
 premia = returns - rates/12
 npremia = premia/vix
 plots(premia)
