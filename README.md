@@ -1,4 +1,6 @@
-This is for the manuscript with Abraham Atsiwo titled 'Capital Asset Pricing Model with Size Factor and Normalizing by Volatility Index'. It is available on arXiv:2411.19444. All code is in Python. 
+This is for the manuscript with Abraham Atsiwo titled 
+
+Capital Asset Pricing Model with Size Factor and Normalizing by Volatility Index. 
 
 size-break-points.xlsx shows size breakpoints at capitalizations 5%, 10%, ..., 90%, 95%, for each month from December 1925 to October 2024. size-break-points.py plots related capital distribution curves for December 1925, 1945, 1965, 1985, 2005. 
 
