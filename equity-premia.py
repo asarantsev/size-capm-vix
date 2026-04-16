@@ -14,7 +14,7 @@ def plots(series):
 
 returns = pandas.read_excel('data-new.xlsx', sheet_name = 'Total-Returns').values[:, 10]
 vix = pandas.read_excel('data-new.xlsx', sheet_name = 'Volatility').values[:, 1]
-rates = pandas.read_excel('data-new.xlsx', sheet_name = 'Short-Treasury').values[1:, 1]
+rates = pandas.read_excel('data-new.xlsx', sheet_name = 'Short-Treasury').values[:-1, 1]
 premia = returns - rates/12
 npremia = premia/vix
 plots(premia)
